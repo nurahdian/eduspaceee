@@ -9,17 +9,44 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 12px 16px;
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(6px);
     position: sticky;
     top: 0;
     z-index: 1000;
     flex-wrap: wrap;
+    gap: 10px;
+    flex-direction: row
 }
 header h1 {
     margin: 0;
-    font-size: 28px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 16px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    nav {
+        display: flex;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 14px;
+    }
 }
 
 .video-home {
@@ -333,6 +360,8 @@ a{
     transform: scale(0.97);
     opacity: 0.9;
 }
+
+
 
 
 footer {
