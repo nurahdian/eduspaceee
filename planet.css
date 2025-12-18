@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top, #0b1e39, #000);
+    color: #fff;
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+.section {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.section p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    opacity: 0.85;
+}
+
+.planet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.planet-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    transition: transform 0.3s;
+}
+
+.planet-card:hover {
+    transform: scale(0.97);
+}
+
+.planet-card img {
+    width: 90px;
+    margin-right: 25px;
+}
+
+.planet-info h3 {
+    font-size: 22px;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.planet-info p {
+    font-size: 15px;
+    opacity: 0.85;
+    line-height: 1.6;
+}
+
+.planet-card.horizontal {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.planet-card.horizontal img {
+    width: 180px;        /* gambar lebih besar */
+    height: auto;
+    border-radius: 12px;
+}
+
+.planet-card.horizontal .planet-info h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.planet-card.horizontal .planet-info p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+@media (max-width: 768px) {
+    .planet-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .planet-card img {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .planet-card.horizontal {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .planet-card.horizontal img {
+        width: 140px;
+    }
+}
+
+
+
+.about-box {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.25); /* transparan */
+    padding: 40px;
+    padding-bottom: 0px;
+}
+
+.about-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    text-align: center;
+}
+
+.about-content > div {
+    width: 50%;
+}
+
+.about-content h2 {
+    margin-bottom: 10px;
+}
+
+.about-content p,
+.about-content a {
+    display: block;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about-content > div {
+        width: 100%;
+    }
+}
+.about-box p:last-child {
+    margin-bottom: 0;
+}
+
+.about-content a {
+    color: #fff;              /* warna putih seperti teks lain */
+    text-decoration: none;    /* hilangkan garis bawah */
+}
+
+.about-content a:hover {
+    opacity: 0.8;             /* efek hover halus */
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0px;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+    
+    
+}
