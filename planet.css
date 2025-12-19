@@ -16,45 +16,48 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    flex-wrap: wrap;
-    gap: 10px;
-    flex-direction: row
 }
+
 header h1 {
     margin: 0;
     font-size: 20px;
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;   /* logo ke tengah */
-        text-align: center;
-    }
-
-    nav {
-        width: 100%;
-        margin-top: 8px;
-        justify-content: center; /* menu ke tengah */
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    nav a {
-        font-size: 14px;
-        margin: 0;
-    }
+nav {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
 }
+
 nav a {
-    margin-left: 20px;
     color: #fff;
     text-decoration: none;
     font-size: 16px;
 }
+
 nav a:hover {
     opacity: 0.8;
 }
+
+/* ===== MODE MOBILE ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
 
 .section {
     padding: 60px 40px;
@@ -119,7 +122,7 @@ nav a:hover {
 }
 
 .planet-card.horizontal img {
-    width: 180px;        /* gambar lebih besar */
+    width: 180px;        
     height: auto;
     border-radius: 12px;
 }
@@ -157,7 +160,7 @@ nav a:hover {
 
 .about-box {
     width: 100%;
-    background: rgba(0, 0, 0, 0.25); /* transparan */
+    background: rgba(0, 0, 0, 0.25);
     padding: 40px;
     padding-bottom: 0px;
 }
@@ -197,12 +200,12 @@ nav a:hover {
 }
 
 .about-content a {
-    color: #fff;              /* warna putih seperti teks lain */
-    text-decoration: none;    /* hilangkan garis bawah */
+    color: #fff;             
+    text-decoration: none;    
 }
 
 .about-content a:hover {
-    opacity: 0.8;             /* efek hover halus */
+    opacity: 0.8;            
 }
 
 
@@ -217,4 +220,3 @@ footer {
     
     
 }
-
